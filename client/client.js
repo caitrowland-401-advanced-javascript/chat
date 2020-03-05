@@ -2,7 +2,7 @@ let name = '';
 let timeLastTyping = new Date().getTime();
 
 $(function () {
-  const socket = io('http://172.16.8.6:3000')
+  const socket = io('http://localhost:3000')
   $('#input').submit(function (e) {
     e.preventDefault()
     if ($('#message').val() !== '') {
